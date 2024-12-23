@@ -1,5 +1,11 @@
-mkdir satheesh
+echo "Print the disk space"
 
-cd satheesh
+df -h
 
-touch vishrudh vamika
+echo "print the memory"
+
+free -g
+
+echo "print the cpu"
+
+nproc
