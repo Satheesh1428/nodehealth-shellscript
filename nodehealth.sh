@@ -4,7 +4,7 @@
 ###########################################################################################
 set -x  # debug mode
 set -e  # exit the script when there is an error without proceeding further
-set -o  pipe fail
+set -o  pipefail
 # print the disk space
 df -h
 # Print the memory
