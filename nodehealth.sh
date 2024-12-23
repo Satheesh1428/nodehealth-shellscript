@@ -3,6 +3,8 @@
 # Script : this script will check node health
 ###########################################################################################
 set -x  # debug mode
+set -e  # exit the script when there is an error without proceeding further
+set -o  pipe fail
 # print the disk space
 df -h
 # Print the memory
@@ -11,5 +13,5 @@ free -g
 nproc
 # to get running processer details
 
-ps -ef
+ps -ef | grep amazon | awk -F" " '{print $2}'
 
