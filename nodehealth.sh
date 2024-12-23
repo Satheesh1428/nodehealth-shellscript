@@ -1,11 +1,8 @@
-echo "Print the disk space"
-
+##########################################################################################
+# Author : A.Satheesh.
+# Script : this script will check node health
+###########################################################################################
+set -x  # debug mode
 df -h
-
-echo "print the memory"
-
 free -g
-
-echo "print the cpu"
-
 nproc
